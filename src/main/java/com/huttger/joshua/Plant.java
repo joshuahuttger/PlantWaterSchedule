@@ -1,11 +1,11 @@
-package com.example.restservice;
+package com.huttger.joshua;
 
-public class Greeting {
+public class Plant {
 
 	private final long id;
 	private final String content;
 
-	public Greeting(long id, String content) {
+	public Plant(long id, String content) {
 		this.id = id;
 		this.content = content;
 	}
