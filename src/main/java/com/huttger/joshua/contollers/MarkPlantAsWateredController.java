@@ -1,7 +1,10 @@
-package com.huttger.joshua;
+package com.huttger.joshua.contollers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.huttger.joshua.PlantUpdateConfirmation;
+import com.huttger.joshua.data.Plant;
 
 @RestController
 public class MarkPlantAsWateredController {
@@ -15,6 +18,6 @@ public class MarkPlantAsWateredController {
 	}
 
 	private Plant markPlantAsWateredInDB(int id, String name) {
-		return new Plant(id, name);
+		return new Plant("something", "soemthing else", System.currentTimeMillis());
 	}
 }
