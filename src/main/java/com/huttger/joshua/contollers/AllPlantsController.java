@@ -8,12 +8,12 @@ import com.huttger.joshua.data.Plant;
 import com.huttger.joshua.data.PlantRepository;
 
 @RestController
-public class PlantsToWaterListController {
+public class AllPlantsController {
 	@Autowired
 	PlantRepository plantRepository;
 	
-	@GetMapping("/plants_to_be_watered")
+	@GetMapping("/all_plants")
 	public Iterable<Plant> greeting() {
-		return plantRepository.findByLastUpdatedLessThan(System.currentTimeMillis() - (60 * 1000));
+		return plantRepository.findAll();
 	}
 }

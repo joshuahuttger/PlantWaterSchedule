@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 import javax.persistence.Embeddable;
 
-@Embeddable 
-class PlantId implements Serializable{
+@Embeddable
+public class PlantId implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private String location;
