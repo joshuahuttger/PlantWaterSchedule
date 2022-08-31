@@ -1,9 +1,8 @@
-add tests
-return correct exceptions
-create a real db
-json body instead of path params
-cb3b2f4de868cc6a00352a24610cea54348b9ee1bc17c7d08114f7a91886412d
+Starting Mysql Docker
+sudo docker run -p 13306:3306 --name mysql-docker -e MYSQL_ROOT_PASSWORD=<your password> -d mysql:latest
 
+creating db stuff:
+<your terminal>$mysql --host=127.0.0.1 --port=13306 -u root -p
 mysql> create database db_example; -- Creates the new database
 mysql> create user 'springuser'@'%' identified by 'ThePassword'; -- Creates the user
 mysql> grant all on db_example.* to 'springuser'@'%'; -- Gives all privileges to the new user on the newly created database
